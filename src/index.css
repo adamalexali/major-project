@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.outer-container {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.map-container {
+  height: 600px;
+}
+
+.sidebar {
+  background-color: rgba(245, 245, 245, 0.9);
+  color: #333;
+  padding: 6px;
+  font-family: monospace;
+  z-index: 1;
+  margin: 12px 24px;
+  border-radius: 4px;
+}

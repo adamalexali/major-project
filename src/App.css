@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.navbar {
+  padding: 0.75rem;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.unstyled-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.unstyled-ul a {
+  text-decoration: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
