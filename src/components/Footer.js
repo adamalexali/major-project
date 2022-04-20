@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import { LinkContainer } from 'react-router-bootstrap';
+import '../../src/App.css';
 export class Footer extends Component {
   render() {
     return (
@@ -8,31 +9,26 @@ export class Footer extends Component {
         <footer className='my-3'>
           <Row>
             <Col col-4>
-              <h5>Features</h5>
+              <h5>Community</h5>
               <ul className='unstyled-ul'>
                 <li>
                   <a href='#' className='text-muted'>
-                    Feature 1
+                    Slack
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    Feature 2
+                    Element
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    Feature 3
+                    Meetup
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    Feature 4
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='text-muted'>
-                    Feature 5
+                    Newsletter
                   </a>
                 </li>
               </ul>
@@ -41,58 +37,48 @@ export class Footer extends Component {
               <h5>Resources</h5>
               <ul className='unstyled-ul'>
                 <li>
+                  <LinkContainer to='/faq' className='text-muted'>
+                    <a>FAQ</a>
+                  </LinkContainer>
+                </li>
+                <li>
                   <a href='#' className='text-muted'>
-                    Resource 1
+                    Docs
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    Resource 2
+                    Donate
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    Resource 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='text-muted'>
-                    Resource 4
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='text-muted'>
-                    Resource 5
+                    Conferences
                   </a>
                 </li>
               </ul>
             </Col>
             <Col col-4>
-              <h5>About</h5>
+              <h5>Social</h5>
               <ul className='unstyled-ul'>
                 <li>
                   <a href='#' className='text-muted'>
-                    About 1
+                    Twitter
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    About 2
+                    Instagram
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    About 3
+                    Facebook
                   </a>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
-                    About 4
-                  </a>
-                </li>
-                <li>
-                  <a href='#' className='text-muted'>
-                    About 5
+                    YouTube
                   </a>
                 </li>
               </ul>

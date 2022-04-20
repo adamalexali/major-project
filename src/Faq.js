@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import './App.css';
-export class Home extends Component {
+
+export class Faq extends Component {
   render() {
     return (
       <Container className='my-3 main-content'>
         <Row>
-          <h1 className='text-center'>
-            Welcome to the Toronto Community Network!
-          </h1>
-          <Container className='text-center my-3'>
-            <button type='button' className='btn btn-primary'>
-              Join now
-            </button>
+          <h1 className='text-center'>Frequently Asked Questions</h1>
+          <Container className='my-3'>
+            <h2></h2>
           </Container>
           <div>
             <p>
@@ -48,4 +45,4 @@ export class Home extends Component {
   }
 }
 
-export default Home;
+export default Faq;
