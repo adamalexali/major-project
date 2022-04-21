@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { Container, Row } from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
@@ -35,20 +36,22 @@ function Map() {
   useEffect(() => {
     if (!map.current) return;
     const marker1 = new mapboxgl.Marker()
-      .setLngLat([-79.38, 43.65])
+      .setLngLat([-79.36547, 43.64395])
       .addTo(map.current);
   });
 
   return (
-    <div className='Map'>
-      <h1>Map Marker Demo</h1>
-      <div className='outer-container'>
-        <div ref={mapContainer} className='map-container' />
-        <div className='sidebar'>
-          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-        </div>
-      </div>
-    </div>
+    <Container className='my-3 main-content Map'>
+      <Row>
+        <h1>Map</h1>
+        <Container className='text-center my-3'>
+          <div ref={mapContainer} className='map-container' />
+          <div className='sidebar'>
+            Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+          </div>
+        </Container>
+      </Row>
+    </Container>
   );
 }
 

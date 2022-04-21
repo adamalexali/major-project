@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../src/App.css';
 export class Footer extends Component {
   render() {
@@ -37,9 +37,9 @@ export class Footer extends Component {
               <h5>Resources</h5>
               <ul className='unstyled-ul'>
                 <li>
-                  <LinkContainer to='/faq' className='text-muted'>
-                    <a>FAQ</a>
-                  </LinkContainer>
+                  <Link to='/faq' className='text-muted'>
+                    FAQ
+                  </Link>
                 </li>
                 <li>
                   <a href='#' className='text-muted'>
@@ -47,14 +47,14 @@ export class Footer extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href='#' className='text-muted'>
+                  <Link to='/donate' className='text-muted'>
                     Donate
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#' className='text-muted'>
-                    Conferences
-                  </a>
+                  <Link to='/blog' className='text-muted'>
+                    Blog
+                  </Link>
                 </li>
               </ul>
             </Col>

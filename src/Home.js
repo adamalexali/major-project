@@ -1,45 +1,53 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './App.css';
 export class Home extends Component {
   render() {
     return (
       <Container className='my-3 main-content'>
         <Row>
-          <h1 className='text-center'>
-            Welcome to the Toronto Community Network!
-          </h1>
-          <Container className='text-center my-3'>
+          <h1>TDotComm</h1>
+          <h2>Toronto's Wireless Community Network</h2>
+          <Container className='text-center mb-4'>
             <button type='button' className='btn btn-primary'>
               Join now
             </button>
           </Container>
           <div>
             <p>
-              The Internet is central to our lives, but in New York City far too
-              many people don't have access.
+              Toronto is home to Canada's best digital infrastructure, and yet,
+              many are still facing barriers to accessing the internet. This has
+              become even more prevalent with the pandemic, which highlighted
+              the critical need for internet among all people.
+            </p>
+            <p>
+              Among the greatest issues are access due to costs and reliability.{' '}
+              <span className='emphasis-span'>
+                {' '}
+                Half of Toronto's low-income households (52%) and of those aged
+                60 and older (48%)
+              </span>{' '}
+              report download speeds below the national target of 50 Mbps.
+              Futhermore,{' '}
+              <span className='emphasis-span'>
+                half of all disconnected Toronto households
+              </span>{' '}
+              are not connected due to the cost, and{' '}
+              <span className='emphasis-span'>61%</span> say it is impacting
+              their ability to access critical services and information
             </p>
             <p>
               We are a diverse group of volunteers dedicated to ending the
-              digital divide and extending high-speed, reliable internet to all
-              New Yorkers. You can help by joining our community network to get
-              online, volunteering to connect neighbors or grow the network, and
-              donating to improve our community infrastructure and ensure access
-              for all.
+              digital divide and providing community-owned, high-speed and
+              reliable internet to Toronto residents. We are always looking out
+              for people who are interested in being a part of the movement—you
+              can contribute your technical skills, people skills, or donate if
+              you are able!
             </p>
             <p>
-              NYC Mesh is a neutral network and we do not monitor, collect,
-              store or block any user data or content. By joining our network
-              you agree to extend it to others!
-            </p>
-            <p>
-              We can connect your apartment to the internet by putting an
-              antenna on the roof of your building and running a cable to your
-              apartment.
-            </p>
-            <p>
-              We can also connect your whole building using fiber with speeds of
-              10 gigabit or more. Ask us about fiber to the home (FTTH).
+              Interested in learning more? Check out our{' '}
+              <Link to='/faq'>FAQs</Link> page.
             </p>
           </div>
         </Row>
