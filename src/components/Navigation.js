@@ -14,11 +14,6 @@ export class Navigation extends Component {
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav as='ul'>
               <Nav.Item as='li'>
-                <LinkContainer to='/'>
-                  <Nav.Link>Home</Nav.Link>
-                </LinkContainer>
-              </Nav.Item>
-              <Nav.Item as='li'>
                 <LinkContainer to='/faq'>
                   <Nav.Link>FAQ</Nav.Link>
                 </LinkContainer>

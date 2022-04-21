@@ -13,8 +13,8 @@ export class Blog extends Component {
             <Card.Body>
               <Card.Title>Addressing the digital divide</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Card.Text>
               <Link to='/blog/digital-divide'>Read more</Link>
             </Card.Body>
@@ -24,8 +24,8 @@ export class Blog extends Component {
             <Card.Body>
               <Card.Title>The internet as a commons</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Egestas egestas fringilla phasellus faucibus scelerisque
+                eleifend donec pretium vulputate.
               </Card.Text>
               <Link to='#'>Read more</Link>
             </Card.Body>
